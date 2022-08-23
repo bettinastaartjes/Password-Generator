@@ -3,8 +3,10 @@ This assignment required the creation of an application that an employee can use
 
 # Links to Assignment
 Find the deployment links below:
-- Github Repository
-- Deployed Github IO
+- Github Repo: https://github.com/bettinastaartjes/Password-Generator (Links to an external site.)
+- Deployed Link: https://bettinastaartjes.github.io/Password-Generator/ (Links to an external site.)
+
+
 
 # Assignment Summary
 
