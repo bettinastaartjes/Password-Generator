@@ -17,6 +17,33 @@ function generatePassword () {
     window.alert("Password length must be between 8-128 characters.")
     return
   }
+
+  var userWantsNumbers = window.confirm("Do you want numbers in your password?")
+  var userWantsSymbols = window.confirm ("Do you want symbols in your password?")
+  var userWantsLowercase = window.confirm ("Do you want lowecase letters in your password?")
+  var userWantsUppercase = window.confirm ("Do you want uppercase letters in your password?")
+
+  var numberList = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+  var symbolList = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"]
+  var lowercaseList = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+  var uppercaseList= ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+
+  var optionsCart = [numberList]
+  
+  if (userWantsNumbers === true) {
+    optionsCart.push (numberList)
+  }
+  if (userWantsSymbols === true) {
+    optionsCart.push (symbolList)
+  }
+  if (userWantsLowercase === true) {
+    optionsCart.push (lowercaseList)
+  }
+
+  if (userWantsUppercase === true) {
+    optionsCart.push (uppercaseList)
+  }
+
 }
 
 
